@@ -41,7 +41,7 @@ func main() {
 	flag.CommandLine.SortFlags = false
 	flag.Parse()
 
-	if *help == true {
+	if len(os.Args[1:]) == 0 || *help == true {
 		flag.Usage()
 		os.Exit(0)
 	}
