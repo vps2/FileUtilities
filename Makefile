@@ -1,9 +1,9 @@
-.PHONY: all build-fmove build-ffmpegconv clean help
+.PHONY: build-all build-fmove build-ffmpegconv clean help
 
 GOOS = $(shell go env GOOS)
 
-## all: создать исполняемые файлы всех утилит
-all : build-fmove build-ffmpegconv
+## build-all: создать исполняемые файлы всех утилит
+build-all : build-fmove build-ffmpegconv
 
 ## build-fmove: создать исполняемый файл утилиты fmove
 build-fmove:
