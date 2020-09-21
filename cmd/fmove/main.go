@@ -3,12 +3,13 @@ package main
 import (
 	"context"
 	"fmt"
-	"futilities/internal/fs"
 	"os"
 	"os/signal"
 	"path/filepath"
 	"sync"
 	"time"
+
+	"github.com/vps2/futilities/internal/fs"
 
 	flag "github.com/spf13/pflag"
 	"go.uber.org/zap"

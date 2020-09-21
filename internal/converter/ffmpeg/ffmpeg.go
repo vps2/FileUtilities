@@ -3,13 +3,14 @@ package ffmpeg
 import (
 	"bytes"
 	"fmt"
-	"futilities/internal/fs"
 	"os"
 	"os/exec"
 	"path/filepath"
 	"regexp"
 	"runtime"
 	"strings"
+
+	"github.com/vps2/futilities/internal/fs"
 )
 
 var ffmpegPathName string
